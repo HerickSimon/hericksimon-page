@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Herick Simon - DEV</title>
+    <title>Portifólio Herick Simon</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -14,17 +14,26 @@
 <body>
     <header>
         <div class="logo">
-            <img src="Imagens/HS-ID.png" alt="Herick Simon ID" width="200px">
+            <a href="#">
+                <img src="Imagens/HS-ID.png" alt="Herick Simon ID" width="135px">
+            </a>
         </div>
         <ul>
             <li>
-                <a target="_blank" href="https://www.linkedin.com/in/herick-simon/">LinkedIn</a>
+                <a target="_blank" href="https://www.linkedin.com/in/herick-simon/">
+                    <i class="fab fa-linkedin-in"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://github.com/HerickSimon">GitHub</a>
+                <a target="_blank" href="https://github.com/HerickSimon">
+                    <i class="link-social-media-black fab fa-github"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.instagram.com/hericksimon/">Instagram</a>
+                <a target="_blank" href="https://www.instagram.com/hericksimon/">
+                    <i class="link-social-media-black fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/92981728582/">
+                    <i class="link-social-media-black fab fa-whatsapp"></i></a>
             </li>
         </ul>
     </header>
@@ -32,31 +41,39 @@
         <section class="container">
             <div class="name">
                 <h1>Herick Simon</h1>
-                <h5>Desenvolvedor Front-End Júnior</h5>
+                <h5>Desenvolvedor Fullstack</h5>
             </div>
 
             <div onclick="displayAbout()" id="arrow">
+                WHO AM I?
                 <i id="animation" class="fas fa-sort-down"></i>
             </div>
 
             <div style="display: none;" id="about">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sint veniam omnis ex velit deserunt optio dicta. Dignissimos iusto aliquid commodi illo. Ducimus explicabo blanditiis vero eaque laboriosam, repellendus atque.
+                    Estudante do 6º período de Engenharia da Computação, Graduado em Gestão de TI e Cursando especialização em Segurança Digital. Casado, 33 anos, natural de Manaus-AM. Apaixonado por tecnologia e jogos. Estudando programação na Gama Academy (Desenvolvimento
+                    Fullstack), e utilizando este conhecimento para construir esse portifólio. É um prazer poder mostrar um pouco do meu trabalho para você, fique à vontade para entrar em contato comigo através dos links no topo desta página.
                 </p>
-            </div>
-
-            <div class="form">
-                <div>
-                    <p>Deixe seu contato!</p>
-                </div>
-                <form action="">
-                    <input type="text" placeholder="Seu melhor e-mail">
-                    <button>Enviar!</button>
-                </form>
             </div>
         </section>
 
     </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="Imagens/HS-ID.png" alt="Herick Simon ID" width="100px">
+                        </br>
+                        <span>Desenvolvido por</span>
+                        <a href="#"> @hericksimon</a>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
     <script>
         function displayAbout() {
