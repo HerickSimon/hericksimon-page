@@ -1,123 +1,105 @@
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: Helvetica, sans-serif;
-        color: #FFF;
-        max-width: 100%;
-    }
-    
-    ul {
-        list-style: none;
-        font-size: 20px;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    body {
-        background: url(./Imagens/Background.jpeg) no-repeat center center fixed;
-        background-size: cover;
-    }
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px;
-        background-color: rgb(36, 33, 33);
-        box-shadow: 1px 1px 10px 1px #FFF;
-        margin-bottom: 55px;
-    }
-    
-    header ul {
-        display: flex;
-    }
-    
-    header ul li {
-        padding: 10px;
-    }
-    
-    header ul li a i {
-        transition: 300ms;
-        font-size: 30px;
-        margin-left: 20px;
-    }
-    
-    header ul li a i:hover {
-        color: darkgrey;
-    }
-    
-    .container {
-        text-align: center;
-    }
-    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #FFF;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(./Imagens/Background.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: rgb(36, 33, 33);
+    box-shadow: 1px 1px 10px 1px #FFF;
+    margin-bottom: 55px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 10px;
+}
+
+header ul li a i {
+    transition: 300ms;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+header ul li a i:hover {
+    color: darkgrey;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 90px;
+}
+
+.container .name h5 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#arrow i {
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotateX(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 480px) {
     .container .name h1 {
-        font-size: 90px;
+        font-size: 60px;
     }
-    
     .container .name h5 {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 300;
     }
-    
-    #arrow i {
-        font-size: 25px;
-        cursor: pointer;
-        margin-top: 20px;
-        margin-bottom: 15px;
-    }
-    
-    #animation {
-        transition: 300ms;
-    }
-    
-    .rotate {
-        transform: rotateX(180deg);
-        transition: 300ms;
-    }
-    
-    .active {
-        display: block !important;
-    }
-    
     #about p {
-        max-width: 600px;
-        margin: 0 auto;
-        font-size: 20px;
+        max-width: 80%;
         text-align: justify;
     }
-    
-    footer {
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-    
-    footer .container ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    @media only screen and (max-width: 480px) {
-        .container .name h1 {
-            font-size: 60px;
-        }
-        .container .name h5 {
-            font-size: 20px;
-            font-weight: 300;
-        }
-        #about p {
-            max-width: 80%;
-            text-align: justify;
-        }
-        footer {
-            position: absolute;
-            bottom: 0;
-            margin-bottom: 15px;
-            width: 100%;
-        }
-    }
+}
